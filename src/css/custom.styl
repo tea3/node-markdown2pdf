@@ -1,0 +1,258 @@
+p
+	line-height: font-line-height
+	margin : 2.8em 1.0em
+
+
+//-----------------------------------
+// header
+//-----------------------------------
+h1
+	font-size: 2.4em
+	text-align: center
+	margin: 0 0 2em 0
+	padding: 0 0 0.5em 0
+	
+h2
+	font-size: 2.0em
+	text-align: left
+	background-color: lighten(color-favicon , 8)
+	border-left: border-bold solid darken(color-favicon,8)
+	color: color-background
+	font-weight: normal
+	text-shadow: 0.3mm 0.3mm 1mm darken(color-favicon,8)
+	margin: 2.8em 0 1.0em 0
+	padding: 0.3em 0.2em 0.3em 0.4em
+
+h3,h4,h5,h6
+	color: darken(color-favicon,8)
+
+h3 
+	font-size: 1.8em
+	display: table
+	padding: 0 0.2em
+	margin: 2.0em 0 1.0em 0
+	border-bottom: border-middle solid darken(color-favicon,0)
+	
+h4 
+	font-size: 1.6em
+	display: table
+	padding: 0 0.2em
+	margin: 1.8em 0
+	border-bottom: border-thin solid darken(color-favicon,0)
+h5 
+	font-size: 1.4em
+h6 
+	font-size: 1.2em
+
+
+//-----------------------------------
+// img
+//-----------------------------------
+img
+	width: 90%
+	margin: 1.0em 5%
+	box-shadow: 0.2em 0.2em 0.8em rgba(color-default , 0.75)
+
+
+//-----------------------------------
+// list
+//-----------------------------------
+dl , ol , ul
+	margin: 2.2em 1.0em 2.2em 1.0em;
+	padding: 0
+	li 
+		margin: 0.8em
+		line-height: 1.8em
+	li ul, li ol
+		margin-bottom: 2em
+ol
+	list-style: none
+	counter-reset:number
+	
+	li:before
+		counter-increment: number
+		content: counter(number)
+		position: absolute
+		left: -2.2em
+		display: inline-block
+		margin: 0 0.5em 0 0
+		padding: 0
+		width: 1.6em
+		height: 1.6em
+		float: left
+		background: lighten(color-favicon,8)
+		border-radius: 50%
+		color: color-background
+		text-align: center
+		line-height: 1.6em
+
+	li p:first-child
+		display: inline-block
+		line-height: 1.6em
+		height: 1.6em
+
+	
+ul , ol
+	li
+		font-size: 1.0em;
+		position: relative;
+		margin: 0.6em 1.0em 0.6em 3.5em;
+		padding: 0;
+	p
+		margin:0;
+	p:not(:first-child)
+		color: lighten(color-default,35);
+		margin: 0.4em 0 1.0em 0em;
+
+ul
+	list-style: none
+	
+	li::after,
+	li::before
+		display: block;
+		content: '';
+		position: absolute;
+	
+	li::after
+		top: 0.6em;
+		left: -1.0em;
+		width: 0.6em;
+		height: 0.6em;
+		background-color: lighten(color-default,55);
+		border-radius: 100%;
+
+
+//-----------------------------------
+// code block
+//-----------------------------------
+pre
+	background-color: color-code
+	border: none
+	margin 2.8em 1.0em
+	padding: 1em
+
+	code
+		background-color: color-code
+
+		span
+			background-color: color-code
+
+
+//-----------------------------------
+// table
+//-----------------------------------
+table
+	margin: 2.2em 1.0em;
+	width: auto
+	border-collapse: collapse
+	border-spacing: 0
+	font-size: 0.9em;
+
+th
+	border: border-thin solid darken(color-border,10)
+	background-color: color-tableBack
+	color: darken(color-default,15)
+	padding: 0.8em 0.8em
+
+td
+	border: border-thin solid darken(color-border,10)
+	padding: 0.8em 0.8em
+	line-height: 1.5em
+
+blockquote
+	font-family: font-sans
+	margin: 2.8em 1.0em
+	padding: 1.0em 1.8em;
+	background: color-code
+	color: code-variable
+	position: relative;
+	z-index: 1;
+	border: none;
+
+	blockquote
+		&:before
+			content: ""
+		&:after
+			content: ""
+
+	p
+		margin: 0;
+	p:last-child
+		margin-bottom: 0
+	footer
+		font-size: font-size
+		font-family: font-sans
+		cite
+			&:before
+				content: "—"
+				padding: 0 0.5em
+
+	&:before
+		content:"”";
+		font-size:600%;
+		line-height:1em;
+		font-family: sans-serif;
+		color: darken(color-code, 5);
+		position:absolute;
+		right:0;
+		top:0;
+		z-index:-1;
+
+	&:after
+		font-family: font-icon , minmoji
+		font-size: 0.8em;
+		color: lighten( code-variable , 12);
+		position:absolute;
+		left: 0.2em;
+		top: -1.4em;
+		z-index:-1;
+		display: inline-block;
+
+
+//-----------------------------------
+// strong
+//-----------------------------------
+em
+	padding: 0.2em 0.3em;
+	margin: 0 0.2em;
+	font-style: normal
+	font-weight: normal
+	color: color-em;
+	background-color: color-em-background;
+
+
+strong
+	padding: 0.2em 0.3em;
+	margin: 0 0.2mm;
+	font-style: normal
+	font-weight: normal
+	color: color-strong;
+	background-color: color-strong-background;
+
+
+
+//-----------------------------------
+// keyboard
+//-----------------------------------
+kbd
+	font-size: 0.85em;
+	font-family: font-mono;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	border-radius 0.8mm;
+	padding: 0.6em 0.4em 0.3em 0.4em;
+	margin: 0 0.8mm 0 0.8mm;
+	vertical-align: baseline;
+	zoom: 1;
+
+	background: color-background;
+	border-top: border-thin solid color-background;
+	border-left: border-thin solid color-background;
+	border-right: border-thin solid darken(color-background,10);
+	border-bottom: border-thin solid darken(color-background,10);
+	box-shadow: 0 0 0.2em #E8E8E8 inset, 0 border-thin 0 #C3C3C3, 0 0.3em 0 #C9C9C9, 0 0.3em 0.3em #333333;
+	color: color-default;
+	text-shadow: 0 border-thin 0 color-background;
+	text-align: center;
+	line-height: 1.0em;
+	display: inline-block;

@@ -1,0 +1,85 @@
+a
+  color: color-link
+  text-decoration: none
+
+  &:hover
+    color: darken(color-link,40)
+
+strong, b
+  font-weight: bold
+
+em
+  font-style: italic
+
+code
+  text-shadow: 0 0.3mm lighten(color-inlineCode-background, 20)
+  padding: 0 0.3em
+
+del
+  text-decoration: line-through
+
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+
+:root sub, :root sup
+  vertical-align: baseline
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.2em
+
+acronym, abbr
+  border-bottom: border-thin dotted
+  font-variant: normal
+
+abbr
+  cursor: help
+
+h1, h2, h3, h4, h5, h6
+  color: color-title
+  font-weight: bold
+  a
+    color: color-title
+    text-decoration: none
+    &:hover
+      color: color-title
+
+pre, code
+  font-family: font-mono
+  font-size 0.9em
+  background-color: color-inlineCode-background
+  padding: 0.2em 0.3em
+  margin: 0 0.2em
+  
+  font-weight: normal
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+code
+  color: code-variable
+
+.left, .alignleft
+  float: left
+
+.right, .alignright
+  float: right
+
+html
+  margin : 0mm
+  padding: 0mm
+
+body
+  padding: 0cm
+  margin: 0cm
+  font-family: font-sans
+  font-size: font-default-size
+  color: color-default
+  background: color-background
+  text-rendering: optimizelegibility
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale

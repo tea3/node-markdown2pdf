@@ -1,0 +1,83 @@
+//-------------------
+// Color
+//-------------------
+color-default               = #4f5759
+color-em                    = #736E4F;
+color-em-background         = #FAF7DC;
+color-strong                = #734F4F;
+color-strong-background     = #FADCDC;
+
+color-title                 = #000
+color-border                = #ddd
+color-link                  = #e94f76
+color-background            = #FFF
+color-meta                  = #999
+color-footer                = #777
+color-inlineCode-background = #F5F2F0;
+color-blockquote-background = #f6f6f4;
+color-date                  = lighten(color-default, 30)
+color-favicon               = #88b9c1
+color-tableBack             = #fdf7f4
+
+color-attention             = #ce8a8a
+color-download              = #88a3c1
+color-memo                  = color-favicon
+
+
+//-------------------
+// Syntax code color
+//-------------------
+color-code             = lighten(color-inlineCode-background,2);
+color-code-border      = darken(color-inlineCode-background,2)
+color-code-border-left = color-background;
+code-variable          = #918577;
+code-comments          = #D4D0CD;
+code-class             = #c38700;
+code-number            = #6c9a1c;
+code-function          = #b42147;
+code-method            = #1a9ca1;
+code-important         = #816ec5;
+code-gutter            = code-comments;
+code-figcaption        = #C7BFB9;
+
+color-toc-background = lighten(color-code,1)
+color-toc-border     = lighten(color-favicon , 30)
+color-toc-link       = darken(code-variable, 8)
+color-toc-link-hover = darken(code-variable, 30)
+
+
+//-------------------
+// border
+//-------------------
+border-thin   = 0.3mm
+border-middle = 0.8mm
+border-bold   = 2.0mm
+
+
+
+//-------------------
+// fonts
+//-------------------
+
+font-default-size   = 2.6mm
+font-line-height    = 2.2em
+
+// // If you want to use "Noto Sans Japanese"
+// @import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+
+// // If you want to use "myFonts"
+// @font-face
+// 	font-family: 'myFonts';
+// 	font-style: normal;
+// 	font-weight: 100;
+// 	src: url("../fonts/myFonts.eot") format('embedded-opentype')
+// 	src: url("../fonts/myFonts.woff") format('woff')
+// 	src: url("../fonts/myFonts.otf") format('opentype')
+
+// // setting sans font
+// font-sans = "myFonts", "Noto Sans Japanese" , "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3" ,"Yu Gothic", YuGothic, "游ゴシック体", Meiryo, "メイリオ", sans-serif;
+
+font-sans = "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3" ,"Yu Gothic", YuGothic, "游ゴシック体", Meiryo, "メイリオ", sans-serif;
+
+// setting mono font
+font-mono = Menlo, Consolas, Monaco, Consolas, monospace
