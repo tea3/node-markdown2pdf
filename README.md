@@ -11,7 +11,7 @@ markdownファイルを、PDFファイルへ一括変換します。markdown(.md
 ## Demo
 
 Please see the following.
-[https://github.com/tea3/node-markdown2pdf/file/pdf/markdown.pdf](https://github.com/tea3/node-markdown2pdf/file/pdf/markdown.pdf)
+[https://github.com/tea3/node-markdown2pdf/blob/master/file/pdf/sample-markdown.pdf](https://github.com/tea3/node-markdown2pdf/blob/master/file/pdf/sample-markdown.pdf)
 
 ## Install
 
